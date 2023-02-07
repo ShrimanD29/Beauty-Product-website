@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="D:\Project\Full stack\Beauty Product Website\Feedback.css">
+</head>
+<body>
+        <div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">FeedBack about our Products</h1>
+  
+
+  <fieldset>
+    <legend>Personal Details</legend>
+    <div>
+      <label id="name-label" for="name">1. Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label id="number-label" for="phone">2. Phone Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+    <div>
+    <div>
+      <label for="Gender">3. Gender:</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
+    <label for="date-label">4. Date Of Birth:</label>
+    <input type="date" name="dob">
+  
+  </fieldset>
+
+  <fieldset>
+    <legend>About Product</legend>
+    <label for="product">1. Are you able to find products on this website suitable for you?</label>
+    <p>
+      <input type="checkbox" name="yes" value="yes"> YES<br>
+      <input type="checkbox" name="no" value="no"> NO<br>
+    </p>
+
+    <label for="product">2. Do you like smell in our products?</label>
+    <p>
+      <input type="checkbox" name="yes" value="yes"> YES<br>
+      <input type="checkbox" name="no" value="no"> NO<br>
+    </p>
+
+    <label for="product">3. How regular do you use cosmetic products?</label>
+    <input list="reg" name="reg">
+        <datalist id="reg">
+            <option value="Twice Daily">
+            <option value="Once Daily">
+            <option value="Once Weekly">
+            <option value="Sometimes">
+          </datalist>
+  </fieldset>
+  
+
+  
+  <fieldset>
+    <legend>Skin Care</legend>
+    <div>
+      <label for="skin">1. What is your skin type?</label>
+      <select id="dropdown">
+  <option value="d">Dry Skin</option>
+  <option value="o">Oily Skin</option>
+  <option value="c">Normal Skin</option>
+  <option value="n">Sensitive Skin</option>
+  </select>
+<br>
+<br>
+<p>2. What would make you fall in love with a skin care product?</p>
+<textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+<br>
+<br>
+      
+    </div>
+  </fieldset>
+
+
+  
+  <fieldset>
+    <legend>Other</legend>
+    <div>
+      <label for="msg"></label>
+      <p>1. Do you have any questions that were not addressed? (If yes, please note)</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      <label for="msg">2. What would make you buy our product?</label><br>
+      <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+
+      <div>
+        <label for="msg">3. Any other comments</label><br>
+        <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+
+  </fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">Send your Feedback</button>   </div>
+
+   <div id="submitbutton">
+    <button type="reset" id="reset">Reset</button>
+   </div> 
+
+</form>
+  </div>
+</body>
+</html>

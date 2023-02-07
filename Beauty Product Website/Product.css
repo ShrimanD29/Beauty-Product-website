@@ -1,0 +1,183 @@
+
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.logo{
+    color: red;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+@media (min-width: 769px) {
+	.header,
+	.nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+}
+.cont{
+    
+    margin-left: 50px;
+    width: 500px;
+}
+ul a{
+font-size: 30px;
+font-weight: bolder;
+text-decoration: none;
+padding-left: 50px;
+color: gray;
+}
+.cont2{
+    
+    width: 800px;
+    justify-content: center;
+}
+.container-1{
+    display: flex;
+    align-items: center;
+}
+.cont3{
+   
+    
+    width: 840px;
+}
+button
+{
+    float: right;
+}
+.header-1{
+    font-size: 58px;
+
+}
+.img-cam{
+    width: 500px;
+    height: 300px;
+    align-items: center;
+   
+    margin-left: 12px;
+}
+.para-cam{
+    font-size: 23px;
+}
+.card-1{
+  cursor: pointer;
+   transition: 0.2s;
+   margin-left: 54px;
+   transition: 0.2s;
+   
+}
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+.card-1:hover{
+   box-shadow: 15px 15px 15px 15px  gray;
+    
+}
+.container-3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+.container-4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+button{
+    width: 200px;
+    height: 70px;
+    font-size: 23px;
+    margin-right: 166px;
+    border-radius: 12px;
+    background: none;
+    
+}
+button:hover,.move:hover{
+    color: white;
+    background-color: black;
+}
+button .move{
+    text-decoration: none;
+    color: black;
+}

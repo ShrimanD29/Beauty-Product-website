@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.logo{
+    color: red;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+@media (min-width: 769px) {
+	.header,
+	.nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+.content-box {
+    background-color: palevioletred;
+    box-shadow: 1px 4px 8px rgba(0,0,0,.15);
+    transition: all .3s ease-in-out;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 250px;
+}
+.content-box .finbyz-icon {
+    height: 100px;
+    width: 100px;
+    display: inline;
+}
+
+
+body {
+    background: #001628;
+    color: purple;
+    padding: 4em;
+    font-family: sans-serif;
+    line-height: 1.15;
+  }
+  
+  hr { 
+    height: 6px;
+    border: none;
+    background: rgba(0, 0, 0, 0.1);
+  } 
+  
+  hr:last-child {  
+    margin-right: 60%;
+  }
+  
+ 
+  
+  .page {
+    padding: 2em;
+    background: palevioletred;
+    max-width: 1100px;
+  }
+  
+  .archive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 1em;
+    grid-auto-flow: dense;
+  }
+  
+  .article {
+    padding: 1em;
+    background: #fff;
+    box-shadow:
+      0 5px 10px rgba(0, 0, 0, 0.1),
+      0 20px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .article:nth-child(1) {
+    grid-column: 1 / 5;
+    background: rgba(200,200,255,0.3)
+  }
+  
+  .article:nth-child(1)>hr.image {
+    padding-bottom: 30%;
+  }
+  
+  .article:nth-child(1)>hr:last-child {
+    margin-right: 20%;
+    height: 28px
+  }
+  
+  
+  
+  
+
+  
+  .article:after {
+    color: #808;
+    font-weight: bold;
+    font-family: courier;
+  }
